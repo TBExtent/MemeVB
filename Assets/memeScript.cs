@@ -5,6 +5,7 @@ using UnityEngine;
 public class memeScript : MonoBehaviour
 {
     public int minX, maxX, minY, maxY, minZ, maxZ;
+    public float minScaleX, maxScaleX, minScaleY, maxScaleY;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,7 @@ public class memeScript : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = sprites[memePos];
             transform.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), Random.Range(minZ, maxZ));
             transform.rotation = Random.rotation;
+            transform.localScale = new Vector3(Random.Range(minScaleX, maxScaleX), Random.Range(minScaleY, maxScaleY), 0);
         }
     }
 

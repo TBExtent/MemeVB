@@ -94,5 +94,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -100
   maxX: 100
-  minY: -100
-  maxY: 100
+  minY: -10
+  maxY: 10
+  minZ: -100
+  maxZ: 100
+  minScaleX: 1
+  maxScaleX: 1.5
+  minScaleY: 1
+  maxScaleY: 1.5
